@@ -10,9 +10,13 @@ Para realizar este proyecto, se utilizaron las estructuras de datos que se detal
 
  1. LISTA doc_id : Una Lista python, la cual contiene un Diccionario pyton. 
  El Diccionario tiene: 
+ 
  Clave: doc_id : Un id que se le asigna a cada documento
+ 
  Valor: doc_length : nro de caracteres del documento original
+ 
  Veamos un Ejemplo de de esta lista
+
 doc_id=[{'doc_id': 1, 'doc_length': 1424}, 
         {'doc_id': 2, 'doc_length': 1740}, 
         {'doc_id': 3, 'doc_length': 1522}, 
