@@ -17,11 +17,11 @@ Para realizar este proyecto, se utilizaron las estructuras de datos que se detal
  
  Veamos un Ejemplo de de esta lista
 
-doc_id=[{'doc_id': 1, 'doc_length': 1424}, 
-        {'doc_id': 2, 'doc_length': 1740}, 
-        {'doc_id': 3, 'doc_length': 1522}, 
-        {'doc_id': 4, 'doc_length': 988}, 
-        {'doc_id': 5, 'doc_length': 4022}]
+doc_id=[{'doc_id': 1, 'doc_length': 1424},\n
+        {'doc_id': 2, 'doc_length': 1740},\n
+        {'doc_id': 3, 'doc_length': 1522},\n
+        {'doc_id': 4, 'doc_length': 988},\n
+        {'doc_id': 5, 'doc_length': 4022}]\n
         
  2. LISTA freqDict_list : Una Lista python, la cual contiene un Diccionario pyton.
  El Diccionario tiene: 
