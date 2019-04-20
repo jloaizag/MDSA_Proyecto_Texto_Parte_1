@@ -118,21 +118,19 @@ Para ejecutar el código en Jupyter basta con posicionar el cursor en la caja do
 
 En cuanto a las dependencias, estas son librerías para la ejecución de las tareas a ejecutar y generalmente se importan todas al inicio del programa. A continuación, una copia de las librerías usadas en esta parte del proyecto:
 
-import re
-
-import nltk
-
-from nltk import FreqDist
-
-from nltk.corpus import stopwords
-
-from nltk.stem.porter import PorterStemmer
-
-from nltk.stem.lancaster import LancasterStemmer
-
-from nltk.stem import WordNetLemmatizer
-
-wordnet_lemmatizer = WordNetLemmatizer()
-
+import math
+import re                        #regular expressions
+import matplotlib.pyplot as plt
+import nltk                      #libreria de procesamiento natural del lenguaje 
 import glob
+from nltk.corpus import stopwords
+from nltk.stem.porter import PorterStemmer
+from nltk.stem.lancaster import LancasterStemmer # otra lib para stemming
+from nltk.stem import WordNetLemmatizer
+from nltk.corpus import wordnet
+from nltk.stem import PorterStemmer
+from nltk.tokenize import sent_tokenize, word_tokenize
+from nltk import FreqDist
+import time
+
 
