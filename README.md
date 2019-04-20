@@ -1,5 +1,5 @@
 # MDSA_Proyecto_Texto
-# 1. DESCRIPCIÓN DEL PROYECTO
+# I. DESCRIPCIÓN DEL PROYECTO
 Esta es la parte 1 del proyecto denominado "Text Mining".
 Básicamente se tiene un conjunto muy grande de documentos tipo texto (txt, html o pdf) y los  metadatos de dichos documentos. El objetivo es realizar una sistema/aplicación para la ingesta,   almacenamiento , indexación , búsqueda, recuperación , navegación y visualización de documentos. Estos documentos pertenecen al mismo dominio de interés, por ejemplo: ingeniería, medicina, o astronomía, entre muchos otros campos de conocimiento o aplicación.
 El objetivo de esta primera parte es la preparación de la data y la indexación de la misma. En esta parte se leen los documentos, se limpia la data, se tokenizan y se llega a tener una BoW (Bag of Words) con las palabras unicas y su frecuencia.
@@ -8,7 +8,7 @@ El objetivo de esta primera parte es la preparación de la data y la indexación
 El código para realizar la tarea propuesta está escrito para Jupyter, específicamente en formato MarkDown.
 Para realizar este proyecto, se utilizaron las estructuras de datos que se detallan a continuación:
 
- LISTA doc_id : Una Lista python, la cual contiene un Diccionario pyton. 
+ 1. LISTA doc_id : Una Lista python, la cual contiene un Diccionario pyton. 
  El Diccionario tiene: 
  Clave: doc_id : Un id que se le asigna a cada documento
  Valor: doc_length : nro de caracteres del documento original
@@ -19,7 +19,7 @@ doc_id=[{'doc_id': 1, 'doc_length': 1424},
         {'doc_id': 4, 'doc_length': 988}, 
         {'doc_id': 5, 'doc_length': 4022}]
         
- LISTA freqDict_list : Una Lista python, la cual contiene un Diccionario pyton.
+ 2. LISTA freqDict_list : Una Lista python, la cual contiene un Diccionario pyton.
  El Diccionario tiene: 
  Clave: doc_id : id del doc
  Valor: freq_dict : este es otro Diccionario, el Cual contiene:
@@ -31,7 +31,7 @@ doc_id=[{'doc_id': 1, 'doc_length': 1424},
 
 freqDict_list=[{'doc_id': 1, 'freq_dict': {'entropi': 112, 'earli': 3, 'function': 13}}]
 
- LISTA TF_scores : Una Lista python, la cual contiene un Diccionario pyton.
+ 3. LISTA TF_scores : Una Lista python, la cual contiene un Diccionario pyton.
  El Diccionario tiene: 
  Clave: doc_id : id del doc
  Valor: TF_score : este es otro Diccionario, el Cual contiene:
@@ -44,7 +44,7 @@ freqDict_list=[{'doc_id': 1, 'freq_dict': {'entropi': 112, 'earli': 3, 'function
 TF_scores=[{'doc_id': 1, 'TF_score': {'entropi': 0.07865168539325842, 'earli': 0.002106741573033708}}]
 
 
- LISTA IDF_scores : Una Lista python, la cual contiene un Diccionario pyton.
+ 4. LISTA IDF_scores : Una Lista python, la cual contiene un Diccionario pyton.
  El Diccionario tiene: 
  Clave: doc_id : id del doc
  Valor: IDF_score : este es otro Diccionario, el Cual contiene:
@@ -56,7 +56,7 @@ TF_scores=[{'doc_id': 1, 'TF_score': {'entropi': 0.07865168539325842, 'earli': 0
 
 IDF_scores=[{'doc_id': 1, 'IDF_score': {'entropi': 1.9972034434428638, 'earli': 1.5452183196998066}}]
 
- LISTA TFIDF_scores : Una Lista python, la cual contiene un Diccionario pyton.
+ 5. LISTA TFIDF_scores : Una Lista python, la cual contiene un Diccionario pyton.
  El Diccionario tiene: 
  Clave: doc_id : id del doc
  Valor: TFIDF_score : este es otro Diccionario, el Cual contiene:
