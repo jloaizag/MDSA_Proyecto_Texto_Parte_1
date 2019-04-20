@@ -17,59 +17,93 @@ Para realizar este proyecto, se utilizaron las estructuras de datos que se detal
  
  Veamos un Ejemplo de de esta lista
 
-doc_id=[{'doc_id': 1, 'doc_length': 1424},\n
-        {'doc_id': 2, 'doc_length': 1740},\n
-        {'doc_id': 3, 'doc_length': 1522},\n
-        {'doc_id': 4, 'doc_length': 988},\n
-        {'doc_id': 5, 'doc_length': 4022}]\n
+doc_id=[{'doc_id': 1, 'doc_length': 1424},\
+        {'doc_id': 2, 'doc_length': 1740},\
+        {'doc_id': 3, 'doc_length': 1522},\
+        {'doc_id': 4, 'doc_length': 988},\
+        {'doc_id': 5, 'doc_length': 4022}]\
         
  2. LISTA freqDict_list : Una Lista python, la cual contiene un Diccionario pyton.
  El Diccionario tiene: 
+ 
  Clave: doc_id : id del doc
+ 
  Valor: freq_dict : este es otro Diccionario, el Cual contiene:
+ 
         Clave: una palabra
+        
         Valor: Frecuencia de la palabra (número de veces que esta aparece en el documento)
+        
  La lista tiene tantos registros como documentos leídos
+ 
  El diccionario de cada documento tiene tantas claves(palabras) como palabras diferentes tenga el documento (ya limpio)
+ 
  Veamos un ejemplo de un registro de la lista; es decir, la información de un documento
 
 freqDict_list=[{'doc_id': 1, 'freq_dict': {'entropi': 112, 'earli': 3, 'function': 13}}]
 
+
  3. LISTA TF_scores : Una Lista python, la cual contiene un Diccionario pyton.
+ 
  El Diccionario tiene: 
+ 
  Clave: doc_id : id del doc
+ 
  Valor: TF_score : este es otro Diccionario, el Cual contiene:
+ 
         Clave: una palabra
+        
         Valor: Frecuencia relativa de la palabra
+        
  La lista tiene tantos registros como documentos se hayan leído
+ 
  El diccionario de cada documento tiene tantas claves(palabras) como palabras diferentes tenga el documento (ya limpio)
- Veamos un ejemplo de un registro de la lista; es decir, la información de un documento
+
+Veamos un ejemplo de un registro de la lista; es decir, la información de un documento
 
 TF_scores=[{'doc_id': 1, 'TF_score': {'entropi': 0.07865168539325842, 'earli': 0.002106741573033708}}]
 
 
+
  4. LISTA IDF_scores : Una Lista python, la cual contiene un Diccionario pyton.
+ 
  El Diccionario tiene: 
+ 
  Clave: doc_id : id del doc
+ 
  Valor: IDF_score : este es otro Diccionario, el Cual contiene:
+ 
         Clave: una palabra
+        
         Valor: índice inverso de la palabra en el documento
- La lista tiene tantos registros como documentos se hayan leído
+        
+ La lista tiene tantos registros como documentos se hayan leído.
+ 
  El diccionario de cada documento tiene tantas claves(palabras) como palabras diferentes tenga el documento (ya limpio)
+ 
  Veamos un ejemplo de un registro de la lista; es decir, la información de un documento
 
 IDF_scores=[{'doc_id': 1, 'IDF_score': {'entropi': 1.9972034434428638, 'earli': 1.5452183196998066}}]
 
- 5. LISTA TFIDF_scores : Una Lista python, la cual contiene un Diccionario pyton.
- El Diccionario tiene: 
- Clave: doc_id : id del doc
- Valor: TFIDF_score : este es otro Diccionario, el Cual contiene:
-        Clave: una palabra
-        Valor: Este valor se calcula multiplicando el TF_Score * IDF_Score de cada palabra
- La lista tiene tantos registros como documentos se hayan leído
- El diccionario de cada documento tiene tantas claves(palabras) como palabras diferentes tenga el documento (ya limpio)
- Veamos un ejemplo de un registro de la lista; es decir, la información de un documento
 
+ 5. LISTA TFIDF_scores : Una Lista python, la cual contiene un Diccionario pyton.
+ 
+ El Diccionario tiene: 
+ 
+ Clave: doc_id : id del doc
+ 
+ Valor: TFIDF_score : este es otro Diccionario, el Cual contiene:
+ 
+        Clave: una palabra
+        
+        Valor: Este valor se calcula multiplicando el TF_Score * IDF_Score de cada palabra
+        
+ La lista tiene tantos registros como documentos se hayan leído
+ 
+ El diccionario de cada documento tiene tantas claves(palabras) como palabras diferentes tenga el documento (ya limpio)
+ 
+ Veamos un ejemplo de un registro de la lista; es decir, la información de un documento
+ 
 TFIDF_scores=[{'doc_id': 1, 'TFIDF_score': {'entropi': 0.15708341690000052, 'earli': 0.0032553756735248735}}]
 
 
