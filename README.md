@@ -114,7 +114,13 @@ TFIDF_scores=[{'doc_id': 1, 'TFIDF_score': {'entropi': 0.15708341690000052, 'ear
 
 
 # III. GUIA DE USO, DEPENDENCIAS, CONSIDERACIONES.
-Para ejecutar el código en Jupyter basta con posicionar el cursor en la caja donde se encuentra el código a ejecutar y presionar CONTROL+ENTER.
+
+Este proyecto está desarrollado usando la herramienta jupyter. Para ejecutar el código lo primero que se debe hacer es cargar el código fuente del notebook del proyecto, el cual se encuentra en este repositorio de GitHub con el nombre ProyectoIntegrador1.ipynb o en la dirección suministrada en el correo. 
+
+Después de cargado el notebook, la ejecución se puede hacer de varias formas. Las 2 más sencillas son:
+- Paso a paso: para esto se posiciona el cursor en la primera caja de código del programa y se presina SHIFT + ENTER para ejecutar el codigo de la caja. Tan pronto este haya terminado, el cursor pasará a la siguiente caja. Una vez allí, de nuevo se presiona SHIFT+ENTER para ejecutar el codigo de la caja, y así sucesivamente hasta llegar al final.
+
+- Ejecutar todo el código: Después de tener cargado el notebook de jupyter, en el menú de la parte superior de la pantalla, se selecciona KERNEL / RESTART & RUN ALL. De esta forma se irán ejecutando todas las cajas de código, hasta llegar al final.
 
 En cuanto a las dependencias, estas son librerías para la ejecución de las tareas a ejecutar y generalmente se importan todas al inicio del programa. A continuación, una copia de las librerías usadas en esta parte del proyecto:
 
